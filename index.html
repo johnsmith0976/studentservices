@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="stylesheet" href="src/slideshow.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1 class="title">McFatter Student Services</h1>
+      <img src="src/imgs/logo.png" alt="McFatter Logo" id="logo" />
+    </div>
+    <!-- Disclaimer -->
+    <div class="buttondiv">
+      <button onclick="location.href='/index.html';">Home</button>
+      <button onclick="location.href='/class.html';">Classes</button>
+      <button onclick="location.href='/club.html';">Clubs</button>
+      <button onclick="location.href='/staff.html';">Staff</button>
+      <button onclick="location.href='/about.html';">About</button>
+    </div>
+    <h3 class="centered">Welcome to the McFatter Student Services Website!</h3>
+    <div class="container">
+      <div class="classTable overFlowX">
+        <table class="ClassTable">
+          <tr class="firstRow">
+            <th>Typical Classes</th>
+            <th>9th</th>
+            <th>10th</th>
+            <th>11th</th>
+            <th>12th</th>
+          </tr>
+          <tr>
+            <th>English</th>
+            <td>English 1</td>
+            <td>English 2</td>
+            <td>AP Language and Composition</td>
+            <td>AP Literature and Compositions</td>
+          </tr>
+          <tr>
+            <th>Mathematics</th>
+            <td>Algebra 1</td>
+            <td>Geometry</td>
+            <td>Algebra 2</td>
+            <td>Precalculus</td>
+          </tr>
+          <tr>
+            <th>Social Studies</th>
+            <td>AP Human Geography</td>
+            <td>
+              <a href="socialstudy/HLevitt.html" class="">AP World History</a>
+            </td>
+            <td>AP United States History</td>
+            <td>AP Government and Economics</td>
+          </tr>
+          <tr>
+            <th>Science</th>
+            <td>Biology / Marine Biology</td>
+            <td>Chemistry</td>
+            <td>
+              <a href="science/Overfield.html" class="">
+                AP Environnmental Science</a
+              >
+            </td>
+            <td>Physics</td>
+          </tr>
+          <tr>
+            <th>Electives</th>
+            <td>Critical Thinking Skills</td>
+            <td>
+              <a href="electives/EDeAngelo.html" class="">AP Psychology</a>
+            </td>
+            <td>Technical Program</td>
+            <td>Technical Program</td>
+          </tr>
+          <tr>
+            <th>Physical Education</th>
+            <td>Personal Fitness</td>
+            <td>Individual Sports</td>
+            <td>N/A</td>
+            <td>N/A</td>
+          </tr>
+          <tr>
+            <th>Practical Arts Vocational</th>
+            <td>Emerging Technology in Business</td>
+            <td>Technical Studies II</td>
+            <td>N/A</td>
+            <td>N/A</td>
+          </tr>
+          <tr>
+            <th>Foreign Language</th>
+            <td>Spanish 1 / Spanish 3</td>
+            <td>Spanish 2 / AP Spanish</td>
+            <td>N/A</td>
+            <td>N/A</td>
+          </tr>
+        </table>
+      </div>
+      <p class="centered">
+        This chart shows what classes McFatter students usually take and when
+        they take them, but this is subject to change. At the end of sophmore
+        year (10th grade), students select their technical programs, which is
+        why the table has N/A.
+      </p>
+       <h3 class="centered">Check Out McFatter's YouTube Channel!</h3>
+      <div class="vid"><div id="videocontainer"></div></div>
+
+      <h3 class="centered">Check out our campus</h3>
+
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 8</div>
+          <img src="src/imgs/SchoolPhotos/School 1.jpg" class="fullwidth" />
+          <div class="text">Campus Directory</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 8</div>
+          <img src="src/imgs/SchoolPhotos/School 2.jpg" class="fullwidth" />
+          <div class="text">Robert P. Legg Industrial Building</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 8</div>
+          <img src="src/imgs/SchoolPhotos/School 3.jpg" class="fullwidth" />
+          <div class="text">Highschool Building</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 8</div>
+          <img src="src/imgs/SchoolPhotos/School 4.jpg" class="fullwidth" />
+          <div class="text">Medical Building</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 8</div>
+          <img src="src/imgs/SchoolPhotos/Mason.jpg" class="fullwidth" />
+          <div class="text">
+            Bottom Text
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">6 / 8</div>
+          <img src="src/imgs/SchoolPhotos/School 5.jpg" class="fullwidth" />
+          <div class="text">Cafeteria</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">7 / 8</div>
+          <img src="src/imgs/SchoolPhotos/School 6.jpg" class="fullwidth" />
+          <div class="text">
+            Food and Snack Kiosk
+          </div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">8 / 8</div>
+          <img src="src/imgs/SchoolPhotos/School 7.jpg" class="fullwidth" />
+          <div class="text">Administration Building</div>
+        </div>
+        <!-- Next and previous buttons -->
+        <a class="prev" id="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" id="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <div class="centered none">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+      </div>
+
+      <!-- <div class="aboutteam" data-closable>
+      <div class="aboutteamwrap">
+        Team info goes here dsuoboubovbjsvbsvnjnj csndnnunnvvvv sncjncnddnvn
+        snunvvnf sdnnvv ojijijij
+        <button class="closebutton" type="button" data-close>
+          <span>&times;</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="contactdiv" data-closable>
+      <div class="contactdivwrap">
+        Contact info goes here
+        <button class="closebutton" type="button" data-close>
+          <span>&times;</span>
+        </button>
+      </div>
+    </div> -->
+    </div>
+    <footer>
+      <div id="updated">Last Updated On&nbsp;</div>
+      <div class="disclaimer">
+        *Disclaimer: This is not an official McFatter website*
+      </div>
+    </footer>
+
+    <script src="src/index.js"></script>
+  </body>
+  <script>
+    let slides = document.getElementsByClassName("mySlides");
+    let prevbtn = document.querySelector("#prev");
+    let nextbtn = document.querySelector("#next");
+
+    let slideIndex = 1;
+
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides((slideIndex += n));
+    }
+
+    function currentSlide(n) {
+      showSlides((slideIndex = n));
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {
+        slideIndex = 1;
+      }
+      if (n < 1) {
+        slideIndex = slides.length;
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+
+    prevbtn.addEventListener("click", plusSlides(-1));
+    nextbtn.addEventListener("click", plusSlides(1));
+
+    showSlides(slideIndex);
+  </script>
+</html>

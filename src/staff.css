@@ -1,0 +1,33 @@
+table,
+th,
+td {
+  border: 1px solid;
+  text-align: center;
+  height: 3.5rem;
+  width: 75rem;
+}
+
+.flexcontainer {
+  display: flex;
+  justify-content: center;
+}
+
+tr:hover:not(.firstRow) {
+  background-color: #31a9af;
+  color: white;
+}
+
+.flexcontainer {
+  padding-top: 1rem;
+}
+
+tr {
+  font-size: 2rem;
+}
+td {
+  font-size: 1.5rem;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
