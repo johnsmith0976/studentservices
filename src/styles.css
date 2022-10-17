@@ -174,3 +174,7 @@ h3 {
   display: flex;
   justify-content: center;
 }
+
+#updated {
+  display: inline-block;
+}  
