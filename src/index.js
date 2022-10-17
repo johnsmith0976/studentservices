@@ -1,4 +1,4 @@
-import "./styles.css";
+
 
 /* let aboutbtn = document.querySelector("#aboutbtn");
 let contactbtn = document.querySelector("#contactbtn"); */
@@ -28,7 +28,7 @@ closebtns.forEach((closebtn) => {
     time: `${date}`
   };
   let splice = Datei.time.slice(4, 15);
-  footer.innerHTML += splice;
+  footer.innerHTML = splice;
 })();
 
 fetch(
